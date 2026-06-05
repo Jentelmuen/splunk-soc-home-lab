@@ -28,7 +28,7 @@ sudo dpkg -i splunk\_package\_name.deb
 
 sudo /opt/splunk/bin/splunk start --accept-license
 
-
+```
 
 Для забезпечення доступу до веб-інтерфейсу Splunk з хостової машини (Windows) через браузер, у налаштуваннях VirtualBox було реалізовано Port Forwarding:
 

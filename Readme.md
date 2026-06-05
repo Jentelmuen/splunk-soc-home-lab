@@ -13,12 +13,12 @@
 
 Для зручності навігації весь процес розбито на окремі технічні модулі:
 
-### 🛠️ [Модуль 1: Встановлення та налаштування мережі](docs/1-installation-and-network.md)
+### 🛠️ [Модуль 1: Встановлення Splunk та налаштування мережі](docs/1-installation-and-network.md)
 * Запуск Splunk Enterprise на Linux.
 * Налаштування Port Forwarding у VirtualBox.
 * Вирішення проблем із блокуванням порту `9997` фаєрволом (UFW Troubleshooting).
 
-### 🔍 [Модуль 2: Емуляція та аналіз атаки Brute-Force (T1110)](docs/2-attack-emulation-t1110.md)
+### 🔍 [Модуль 2: Емуляція атаки Brute Force (T1110)](docs/2-attack-emulation-t1110.md)
 * Генерація невдалих спроб входу через Atomic Red Team.
 * Розробка аналітичного SPL-запиту для виявлення аномалій.
 * Аналіз маркерів компрометації (Event ID 4625, Sub Status `0xC000006A`).
