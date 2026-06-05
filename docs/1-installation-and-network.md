@@ -46,7 +46,7 @@ Guest Port: 8000
 
 
 
-!\[Налаштування Port Forwarding у VirtualBox](../img/virtualbox-port-forwarding.png)
+![Налаштування Port Forwarding у VirtualBox](../img/virtualbox-port-forwarding.png)
 
 
 
@@ -55,7 +55,7 @@ Guest Port: 8000
 Після налаштування локального джерела даних у Linux було проведено тестовий пошуковий запит index="linux\_security". Результати успішного індексування подій безпеки відображено на скріншоті нижче.
 
 
-!\[Результати успішного збору логів у Splunk](../img/raw-logs.png)
+![Результати успішного збору логів у Splunk](../img/raw-logs.png)
 
 
 
