@@ -56,7 +56,7 @@ Guest Port: 8000
 
 
 ![Результати успішного збору логів у Splunk](../img/raw-logs.png)
-
+![Інформація про подію (eventcode)](../img/log_information1.png)
 
 
 📊 Технічний розбір зафіксованих подій:
