@@ -63,9 +63,9 @@ index="windows_security" EventCode=4625
 EventCode = 4625 — у системі Windows цей ідентифікатор відповідає виключно за невдалу спробу входу (An account failed to log on).
 
 TargetUserName = TargetAdmin — чітко вказує на обліковий запис, який намагалися зламати.
-
+```
 ![Інформація про подію (eventcode)](../img/log_information1.png)
-
+```
 IpAddress (Source Network Address) = 127.0.0.1 — джерело атаки (у межах лабораторної роботи — локальний хост).
 
 Logon Type = 3 — мережевий тип входу (Network Logon). Свідчить про те, що спроба підбору здійснювалася через мережеві протоколи, а не локально на клавіатурі.
