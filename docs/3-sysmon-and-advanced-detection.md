@@ -76,8 +76,6 @@ Init failed, unable to subscribe to Windows Event Log channel 'Microsoft-Windows
 
 !\[Результати успішного збору логів sysmon](../img/raw-sysmon-logs.png)
 
-!\[Результати успішного збору логів хостової системи у Splunk](../img/windows\_logs-success.png)
-
 
 
 🚀 Практичний кейс: Детекція дій зловмисника (Red vs Blue)
