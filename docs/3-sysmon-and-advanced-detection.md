@@ -96,9 +96,7 @@ powershell -Command "Invoke-WebRequest -Uri \[https://httpbin.org/get](https://h
 
 
 
-!\[Логи сфабрикованого інциденту](/img/sysmon-catch.png)
-
-
+<img src="/img/sysmon-catch.png" alt="Логи сфабрикованого інциденту">
 
 
 
