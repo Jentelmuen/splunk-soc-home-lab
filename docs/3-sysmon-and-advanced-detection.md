@@ -22,7 +22,9 @@
 
 1\. На цільовому Windows-ендпоінті було розгорнуто Sysmon за допомогою командного рядка:
 
-&#x20;  ```powershell
+&#x20;  ```
+
+powershell
 
 &#x20;  .\\Sysmon64.exe -i sysmonconfig-export.xml -accepteula
 
@@ -99,4 +101,58 @@ powershell -Command "Invoke-WebRequest -Uri \[https://httpbin.org/get](https://h
 
 
 !\[Логи сфабрикованого інциденту](../img/sysmon-catch.png)
+
+
+
+
+
+📊 Результати аналізу артефактів:
+
+EventCode=1 — Створення нового процесу (Process Creation).
+
+
+
+User — Чітко вказує на обліковий запис, у сесії якого було виконано команду.
+
+
+
+Image — Фіксує легітимний бінарник C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe, який було використано як зброю (Living off the Land техніка).
+
+
+
+CommandLine — Головна цінність Sysmon. Повністю розкриває наміри хакера, показуючи сирий текст утиліти Invoke-WebRequest, URL-адресу джерела атаки та точний шлях куди було збережено файл (C:\\Windows\\Temp\\test.ps1).
+
+
+
+
+
+🤖 Автоматизація: Налаштування автозапуску SIEM на Linux
+
+Для оптимізації роботи інфраструктури лабораторії було вирішено проблему ручного старту Splunk Enterprise після кожного рестарту Ubuntu Server. Керування процесом було повністю передано системному менеджеру systemd.
+
+
+
+```
+
+sudo /opt/splunk/bin/splunk enable boot-start -systemd-managed 1 -user root --run-as-root
+
+```
+
+
+
+Службу Splunkd.service було активовано та додано в автозавантаження ОС:
+
+
+
+```
+
+sudo systemctl daemon-reload
+
+sudo systemctl enable Splunkd
+
+sudo systemctl start Splunkd
+
+```
+
+Тепер SIEM-платформа автоматично піднімається у статус active (running) при кожному ввімкненні гіпервізора.
 
