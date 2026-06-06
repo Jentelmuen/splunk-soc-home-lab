@@ -74,10 +74,6 @@ Init failed, unable to subscribe to Windows Event Log channel 'Microsoft-Windows
 
 
 
-!\[Результати успішного збору логів sysmon](../img/raw-sysmon-logs.png)
-
-
-
 🚀 Практичний кейс: Детекція дій зловмисника (Red vs Blue)
 
 1\. Емуляція атаки (Red Team Phase)
@@ -100,7 +96,13 @@ powershell -Command "Invoke-WebRequest -Uri \[https://httpbin.org/get](https://h
 
 
 
+
+
+
+
 !\[Логи сфабрикованого інциденту](../img/sysmon-catch.png)
+
+
 
 
 
