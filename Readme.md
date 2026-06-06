@@ -23,3 +23,9 @@
 * Розробка аналітичного SPL-запиту для виявлення аномалій.
 * Аналіз маркерів компрометації (Event ID 4625, Sub Status `0xC000006A`).
 * Стратегії протидії (Mitigation).
+
+### 🔬 [Модуль 3: Просунутий моніторинг за допомогою Sysmon](docs/3-sysmon-and-advanced-detection.md)
+* Встановлення Sysmon з конфігом SwiftOnSecurity.
+* Troubleshooting помилки доступу до логів (errorCode=5: Access Denied).
+* Перехоплення хакерських команд PowerShell (EventCode=1: Process Creation).
+* Налаштування автозапуску Splunk сервісу через Linux systemd.
